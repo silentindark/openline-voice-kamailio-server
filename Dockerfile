@@ -2,6 +2,7 @@ FROM kamailio/kamailio:5.5.5-bullseye
 
 #Copy the config file onto the Filesystem of the Docker instance
 COPY kamailio.cfg /etc/kamailio/
+COPY kamailio.py /etc/kamailio/
 
 #Expose port 5060 (SIP) for TCP and UDP
 EXPOSE 5060
